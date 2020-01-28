@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832E2E0823E0A9D5005DB4C1 /* UIImage+fixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E2E0723E0A9D5005DB4C1 /* UIImage+fixOrientation.swift */; };
+		832E2E0A23E0ACD2005DB4C1 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E2E0923E0ACD2005DB4C1 /* ImageSaver.swift */; };
+		838EB1F523CB2B93000BF55F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838EB1F423CB2B93000BF55F /* ImagePicker.swift */; };
 		839D192D23CB2056007A7BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D192C23CB2056007A7BEE /* AppDelegate.swift */; };
 		839D192F23CB2056007A7BEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D192E23CB2056007A7BEE /* SceneDelegate.swift */; };
 		839D193123CB2056007A7BEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839D193023CB2056007A7BEE /* ContentView.swift */; };
 		839D193323CB205A007A7BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839D193223CB205A007A7BEE /* Assets.xcassets */; };
 		839D193623CB205A007A7BEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839D193523CB205A007A7BEE /* Preview Assets.xcassets */; };
 		839D193923CB205A007A7BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839D193723CB205A007A7BEE /* LaunchScreen.storyboard */; };
+		83DCDC8323E0C6FE00E0103B /* InstaFilter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83DCDC8223E0C6FD00E0103B /* InstaFilter.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		832E2E0723E0A9D5005DB4C1 /* UIImage+fixOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+fixOrientation.swift"; sourceTree = "<group>"; };
+		832E2E0923E0ACD2005DB4C1 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		838EB1F423CB2B93000BF55F /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		839D192923CB2056007A7BEE /* InstaFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839D192C23CB2056007A7BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839D192E23CB2056007A7BEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		839D193523CB205A007A7BEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		839D193823CB205A007A7BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839D193A23CB205A007A7BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83DCDC8223E0C6FD00E0103B /* InstaFilter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = InstaFilter.gif; sourceTree = "<group>"; };
+		83DCDC8523E0C72300E0103B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +46,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832E2E0623E0A9BE005DB4C1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				832E2E0723E0A9D5005DB4C1 /* UIImage+fixOrientation.swift */,
+				832E2E0923E0ACD2005DB4C1 /* ImageSaver.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		838EB1F323CB2B6E000BF55F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				839D193023CB2056007A7BEE /* ContentView.swift */,
+				838EB1F423CB2B93000BF55F /* ImagePicker.swift */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		839D192023CB2056007A7BEE = {
 			isa = PBXGroup;
 			children = (
+				83DCDC8523E0C72300E0103B /* README.md */,
+				83DCDC8423E0C70700E0103B /* ReadmeRes */,
 				839D192B23CB2056007A7BEE /* InstaFilter */,
 				839D192A23CB2056007A7BEE /* Products */,
 			);
@@ -56,9 +86,10 @@
 		839D192B23CB2056007A7BEE /* InstaFilter */ = {
 			isa = PBXGroup;
 			children = (
+				832E2E0623E0A9BE005DB4C1 /* Utility */,
+				838EB1F323CB2B6E000BF55F /* View */,
 				839D192C23CB2056007A7BEE /* AppDelegate.swift */,
 				839D192E23CB2056007A7BEE /* SceneDelegate.swift */,
-				839D193023CB2056007A7BEE /* ContentView.swift */,
 				839D193223CB205A007A7BEE /* Assets.xcassets */,
 				839D193723CB205A007A7BEE /* LaunchScreen.storyboard */,
 				839D193A23CB205A007A7BEE /* Info.plist */,
@@ -73,6 +104,14 @@
 				839D193523CB205A007A7BEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83DCDC8423E0C70700E0103B /* ReadmeRes */ = {
+			isa = PBXGroup;
+			children = (
+				83DCDC8223E0C6FD00E0103B /* InstaFilter.gif */,
+			);
+			path = ReadmeRes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83DCDC8323E0C6FE00E0103B /* InstaFilter.gif in Resources */,
 				839D193923CB205A007A7BEE /* LaunchScreen.storyboard in Resources */,
 				839D193623CB205A007A7BEE /* Preview Assets.xcassets in Resources */,
 				839D193323CB205A007A7BEE /* Assets.xcassets in Resources */,
@@ -146,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832E2E0823E0A9D5005DB4C1 /* UIImage+fixOrientation.swift in Sources */,
+				832E2E0A23E0ACD2005DB4C1 /* ImageSaver.swift in Sources */,
 				839D192D23CB2056007A7BEE /* AppDelegate.swift in Sources */,
+				838EB1F523CB2B93000BF55F /* ImagePicker.swift in Sources */,
 				839D192F23CB2056007A7BEE /* SceneDelegate.swift in Sources */,
 				839D193123CB2056007A7BEE /* ContentView.swift in Sources */,
 			);
@@ -289,6 +332,7 @@
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = InstaFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +353,7 @@
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = InstaFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
