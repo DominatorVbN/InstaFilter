@@ -78,14 +78,14 @@ struct ContentView: View {
             }
             .actionSheet(isPresented: $showActionSheet) {
                 ActionSheet(title: Text("Select filter"), buttons: [
-                     .default(Text("Crystallize")) { self.setFilter(CIFilter.crystallize()) },
-                       .default(Text("Edges")) { self.setFilter(CIFilter.edges()) },
-                       .default(Text("Gaussian Blur")) { self.setFilter(CIFilter.gaussianBlur()) },
-                       .default(Text("Pixellate")) { self.setFilter(CIFilter.pixellate()) },
-                       .default(Text("Sepia Tone")) { self.setFilter(CIFilter.sepiaTone()) },
-                       .default(Text("Unsharp Mask")) { self.setFilter(CIFilter.unsharpMask()) },
-                       .default(Text("Vignette")) { self.setFilter(CIFilter.vignette()) },
-                       .cancel()
+                    .default(Text("Crystallize")) { self.setFilter(CIFilter.crystallize()) },
+                    .default(Text("Edges")) { self.setFilter(CIFilter.edges()) },
+                    .default(Text("Gaussian Blur")) { self.setFilter(CIFilter.gaussianBlur()) },
+                    .default(Text("Pixellate")) { self.setFilter(CIFilter.pixellate()) },
+                    .default(Text("Sepia Tone")) { self.setFilter(CIFilter.sepiaTone()) },
+                    .default(Text("Unsharp Mask")) { self.setFilter(CIFilter.unsharpMask()) },
+                    .default(Text("Vignette")) { self.setFilter(CIFilter.vignette()) },
+                    .cancel()
                 ])
             }
             .alert(isPresented: $showAlert) {
@@ -137,6 +137,10 @@ struct ContentView: View {
                     self.showAlert = true
                 }
             }
+        }else{
+            self.alertTitle = "Error"
+            self.alertMessage = "Please select image to save"
+            self.showAlert = true
         }
     }
 }
